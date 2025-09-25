@@ -287,10 +287,136 @@ main .categorias ul li a{
     margin-bottom: 10px;
 }
 
+/*-----REGISTRO-----*/
+.bodyregistro {
+    background-color: #4c5056;
+    align-items: center;
+    padding: 2% 2.5% 2% 2.5%;
+}
 
+.mainregistro h2 {
+    text-align: center;
+    color: rgb(239, 236, 236);
+}
 
+.mainregistro {
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 3% 8% 3% 8%;
+    background-image: url(../img/fondo.jpg);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+}
 
+.registro {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.registro input, 
+.registro button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: 1vh;
+}
+
+.registro label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.registro div {
+    margin-bottom: 12px;
+}
+
+.registro button {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.registro button:hover {
+    background-color: #4c5056;
+}
+
+.registro input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/*----LOGIN----*/
+.bodylogin {
+    background-color: #4c5056;
+    align-items: center;
+    padding: 2% 2.5% 2% 2.5%;
+}
+
+.mainlogin h2 {
+    text-align: center;
+    color: rgb(246, 244, 244);
+}
+
+.mainlogin {
+    margin: 5vh auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 3% 8% 3% 8%;
+    background-image: url(../img/fondo.jpg);
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.login {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login input, 
+.login button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 12px;
+    color: black;
+    margin-top: 5px;
+}
+
+.login label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.login div {
+    margin-bottom: 12px;
+}
+
+.login button {
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+
+.login button:hover {
+    background-color: #4c5056;
+}
 
 /*---- RESPONSIVE ----*/
 @media (max-width: 1500px) {
