@@ -252,11 +252,11 @@ main {
 }
 
 /* --------- CONTENIDO DEL PRODUCTO --------- */
-main .categorias {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
+ main .categorias {
+ display: flex;
+ justify-content: center;
+ margin: 20px 0;
+ }
 main .categorias ul {
   display: flex;
   justify-content: space-between;
@@ -272,6 +272,10 @@ main .categorias ul li a{
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
+}
+
+main .categorias ul li a:hover {
+  color: black;                 /* al apoyar el mouse, negro */
 }
 
 .contenido {
