@@ -321,6 +321,7 @@ main .categorias ul li a{
     background-color: #4c5056;
     align-items: center;
     padding: 2% 2.5% 2% 2.5%;
+   
 }
 
 .mainregistro h2 {
@@ -356,7 +357,8 @@ main .categorias ul li a{
     border-radius: 8px;
     outline: none;
     font-size: 1rem;
-    color: black;
+    color: rgb(10, 10, 10);
+    text-decoration: #0c0c0c;
     margin-top: 1vh;
 }
 
@@ -414,6 +416,7 @@ main .categorias ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: black;
 }
 
 .login input, 
@@ -424,14 +427,22 @@ main .categorias ul li a{
     border-radius: 8px;
     outline: none;
     font-size: 12px;
-    color: black;
+    color: rgb(2, 2, 2);
     margin-top: 5px;
+    min-height: 65px;
+}
+.login input[type="email"],
+.login input[type="password"] {
+  text-decoration-color: #040303;
+  color: #040303;
+  background-color: white;
 }
 
 .login label {
     display: block;
     font-size: 13px;
     margin-bottom: 2px;
+    text-decoration: #040303;
 }
 
 .login div {
@@ -441,6 +452,7 @@ main .categorias ul li a{
 .login button {
     background-color: rgb(61, 61, 61);
     color: white;
+    background-color: #040303;
 }
 
 .login button:hover {
@@ -665,12 +677,11 @@ main .categorias ul li a{
   }
 
   main .container .productos {
-    width: 95%;       /* 1 producto ocupa casi todo el ancho */
+    width: 95%;      
     margin: 10px 0;
   }
 
   main .container .productos img {
     width: 100%;
     height: auto;
-  }
-}
+  }}
