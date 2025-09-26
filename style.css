@@ -678,3 +678,7 @@ main .categorias ul li a:hover {
     height: auto;
   }
 }
+.productos, .productoscategoria{
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
