@@ -140,7 +140,6 @@ main .container .productos .info p{
 
 main .container .productos .info a{
     padding: 2%;
-    width: fit-content;
     background-color: rgb(61, 61, 61); 
     border-radius: 10px;
     margin: 2% 0 2% 2%;
@@ -440,7 +439,6 @@ main .categorias ul li a{
 .buzos h2 {
   color: white;
   font-size: 2rem;
-  text-transform: uppercase;
   background: rgba(0,0,0,0.5); /* sombreado detrás del texto */
   padding: 10px 20px;
   border-radius: 5px;
