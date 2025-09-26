@@ -235,17 +235,25 @@ main {
 
 /* --------- CONTENIDO DEL PRODUCTO --------- */
 main .categorias {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2% 2.5% 2% 2.5%;
-    background-color: rgb(48, 48, 48);
-    border-radius: 10%;
-    width: 15%;
-    height: 6vh;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
+main .categorias ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+}
+
 main .categorias ul li a{
-    color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .contenido {
