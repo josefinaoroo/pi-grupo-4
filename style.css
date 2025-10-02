@@ -693,8 +693,6 @@ main .categorias ul li a:hover {
 =======
   }
 }
-.productos, .productoscategoria{
-  transition: transform .15s ease, box-shadow .15s ease;
-}
 
 >>>>>>> 8fbea37a53c6bfa53f62a239d1fac3a4e7163c32
+
