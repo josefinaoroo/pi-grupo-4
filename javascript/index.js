@@ -1,50 +1,50 @@
-let section1 = document.querySelector(".section1")
-let productosSection1 = "";
-let section2 = document.querySelector(".section2")
-let productosSection2 = "";
-fetch('https://dummyjson.com/products/category/kitchen-accessories')
+
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let id = queryStringObj.get("id");
+let contenidoPpal = document.querySelector("main")
+fetch('https://dummyjson.com/products/${id}')
 .then(function(response){
     return response.json()
 })
 .then(function(info){
-  productosSection1 +=   `<h2>🖤 NUESTROS FAVORITOS DEL DÍA 🖤</h2>` 
-  for (let i = 0; i < info.products.length; i++) {
-    productosSection1 += 
-     `<article class="productos">
-        <img src=${info.products[i].images[0]} alt="${info.products[i].title}">
-          <div class="info">
-             <h3>${info.products[i].title}</h3>
-             <p>${info.products[i] .description}</p>
-             <P>${info.products[i] .price}</P>
-             <a href="producto.html?id=${info.products[i].id}">Ver detalle</a>
-          </div>  
-       </article>
-     `    
-    }
-    section1.innerHTML = productosSection1;
-}) .catch(function(error){
+console.log(info)
+let producto = `
+        <section class="contenido">
+            <h2><strong>${info.title}</strong></h2>
+            <p>${info.description}</p>
+            <p>Precio $${info.price}</p>
+            <img src= ${info.images[0]} alt="${info.title}">
+            <p>Stock: ${info.stock}</p>
+            <a href=categoria.html?categoria=${info.category}>${info.category}</a>
+            <ul>
+                <li>#${info.tags[0]}</li>
+                <li>#${info.tags[1]}</li>
+            </ul>
+        </section>
+        <section class="reviews">
+           <div> 
+            <p>Rating: ${info.reviews[0].rating}</p>
+            <p>${info.reviews[0].comment}</p>
+            <p>${info.reviews[0].date}</p>
+            <p>${info.reviews[0].reviewerName}</p>
+           </div>
+            <div> 
+            <p>Rating: ${info.reviews[1].rating}</p>
+            <p>${info.reviews[1].comment}</p>
+            <p>${info.reviews[1].date}</p>
+            <p>${info.reviews[1].reviewerName}</p>
+           </div>
+           <div> 
+            <p>Rating: ${info.reviews[2].rating}</p>
+            <p>${info.reviews[2].comment}</p>
+            <p>${info.reviews[2].date}</p>
+            <p>${info.reviews[2].reviewerName}</p>
+           </div>
+        </section>
+`
+contenidoPpal.innerHTML = producto
+})
+.catch(function(error){
     console.error(error)
 })
-
-fetch('https://dummyjson.com/products/category/sports-accessories')
-.then(function(response){
-    return response.json()
-})
-.then(function(info){
-      productosSection2 +=   `<h2>PRODUCTOS MÁS VENDIDOS</h2>`
-    for (let i = 0; i < info.products.length; i++) {
-       productosSection2 +=
-     `<article class="productos">
-        <img src=${info.products[i].images[0]} alt="${info.products[i].title}">
-          <div class="info">
-             <h3>${info.products[i].title}</h3>
-             <p>${info.products[i] .description}</p>
-             <P>${info.products[i] .price}</P>
-             <a href="producto.html?id=${info.products[i].id}">Ver detalle</a>
-          </div>  
-       </article>
-     `    
-    }
-    section2.innerHTML = productosSection2;
-})
-
