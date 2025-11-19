@@ -705,13 +705,38 @@ main .categorias ul li a:hover {
 }
 
 
-.productocategoria img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-  
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: center;  
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
+.productocategoria {
+    width: 250px;         
+    margin: 20px;        
+    background-color: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.productocategoria img {
+    width: 200px;       
+    height: 200px;       
+    margin-bottom: 15px;
+}
+
+.categoria h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 
 
   
