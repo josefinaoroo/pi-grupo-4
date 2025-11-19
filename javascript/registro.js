@@ -19,5 +19,20 @@ form.addEventListener("submit", function(event){
         errores.innerText = "La contraseña es obligatoria";
         return;
     }
+if (inputPassword.value.length < 6) {
+        errores.innerText = "La contraseña debe tener al menos 6 caracteres";
+        return;
+    }
 
-})
+    if (inputPassword.value !== inputRepetir.value) {
+        errores.innerText = "Las contraseñas no coinciden";
+        return;
+    }
+
+    if (!checkbox.checked) {
+        errores.innerText = "Debes aceptar los términos y condiciones";
+        return;
+    }
+
+    location.href = "login.html";
+});
