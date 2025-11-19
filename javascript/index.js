@@ -2,7 +2,7 @@ let section1 = document.querySelector(".section1")
 let productosSection1 = "";
 let section2 = document.querySelector(".section2")
 let productosSection2 = "";
-fetch('https://dummyjson.com/products/category/kitchen-accessories')
+fetch(`https://dummyjson.com/products/category/kitchen-accessories`)
 .then(function(response){
     return response.json()
 })

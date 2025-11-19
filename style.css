@@ -688,11 +688,34 @@ main .categorias ul li a:hover {
   main .container .productos img {
     width: 100%;
     height: auto;
-<<<<<<< HEAD
+
   }}
-=======
-  }
+ 
+  
+.menu-categorias a {
+    margin: 0 20px;     
+    display: inline-block;
+    text-align: center; 
 }
 
->>>>>>> 8fbea37a53c6bfa53f62a239d1fac3a4e7163c32
+.header-categoria {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+
+.productocategoria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+  
+}
+
+
+  
+
+
+
 

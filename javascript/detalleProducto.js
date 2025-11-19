@@ -2,7 +2,7 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 let contenidoPpal = document.querySelector("main")
-fetch('https://dummyjson.com/products/${id}')
+fetch(`https://dummyjson.com/products/${id}` )
 .then(function(response){
     return response.json()
 })
