@@ -14,17 +14,26 @@ if (usuario) {
     logout.href = "#";
     logout.style.marginLeft = "20px";
 
-    
-    logout.addEventListener("click", function () {
+    logout.addEventListener("click", function (event) {
+        event.preventDefault(); 
         localStorage.removeItem("userEmail");
-        location.href = "index.html"; 
+
+        saludo.innerText = "";
+        logout.innerText = "";
+
+        if (contenedorLogRes) {
+            contenedorLogRes.innerHTML = `
+                <a href="registro.html">REGISTRO</a>
+                <a href="login.html">LOGIN</a>
+            `;
+        }
+
+        location.href = "login.html";
     });
 
-   
     header.append(saludo, logout);
 
-  
     if (contenedorLogRes) {
-        contenedorLogRes.innerHTML = ""; 
+        contenedorLogRes.innerHTML = "";
     }
 }
