@@ -15,7 +15,7 @@
         <nav>
          <form class="search" action="search.html" method="get">
             <input type="text" name="q" placeholder="Buscar productos...">
-            <button type="text">Buscar</button>
+            <button type="submit">Buscar</button>
          </form>
         </nav>
         <nav>
@@ -28,22 +28,32 @@
     <main class="mainlogin">
         <h2>LOGIN</h2>
         <div class="login">
-            <form action="search.html" method="get">
+
+            <form id="formLogin">
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" value="">
+                    <input type="text" id="email">
                 </div>
                 <div>
                     <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña">
+                    <input type="password" id="password">
                 </div>
+                
+                <p id="errores" class="mensaje-error"></p>
+
                 <div>
-                    <button type="submit">Ingresar</button><a href="registro.html"></a><button type="submit">No tengo cuenta</button>
+                    <button type="submit">Ingresar</button>
                 </div>
+
+                <p class="link-cuenta">
+                    <a href="registro.html">No tengo cuenta</a>
+                </p>
             </form>
+        </div>
     </main>
     <footer>
         <p>Integrantes del grupo: Josefina Oro, Manuela Acevedo y Serena Yagüe</p>
     </footer>
+    <script src="./javascript/login.js"></script>
 </body>
 </html>
