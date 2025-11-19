@@ -620,6 +620,11 @@ main .categorias ul li a:hover {
   color: #ccc;
 }
 
+.search input {
+    color: black;      
+}
+
+
 /*---- RESPONSIVE ----*/
 @media (max-width: 1500px) {
     .productoscategoria,
