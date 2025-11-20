@@ -406,7 +406,7 @@ main .categorias ul li a:hover {
     margin: 5vh auto;
     width: 90%;
     max-width: 400px;
-    padding: 3% 8% 3% 8%;
+    padding: 3% 3% 8%;
     background-image: url(./img/fondo.jpg);
     margin-top: 5vh;
     display: flex;
@@ -425,21 +425,23 @@ main .categorias ul li a:hover {
 
 .login input, 
 .login button {
-    width: 100%;
-    padding: 5px;
+     width: 90%;         
+    padding: 8px;        
     border: none;
     border-radius: 8px;
     outline: none;
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(2, 2, 2);
-    margin-top: 5px;
-    min-height: 65px;
+    margin-top: 8px;
 }
 .login input[type="email"],
 .login input[type="password"] {
   text-decoration-color: #040303;
   color: #040303;
   background-color: white;
+  width: 90%;
+  height: 40px;
+  border-radius: 8px;
 }
 
 .login label {
