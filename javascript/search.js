@@ -26,13 +26,13 @@ fetch(`https://dummyjson.com/products/search?q=${termino}`)
         info.products.forEach(function(producto){
             contenido += `
                 <article class="resultados-item">
-                    <a href="detalleProducto.html?id=${producto.id}">
+                    <a href="producto.html?id=${producto.id}">
                         <img src="${producto.thumbnail}" alt="${producto.title}">
                     </a>
                     <div class="info">
                         <h3>${producto.title}</h3>
                         <p>$${producto.price}</p>
-                        <a class="btn-ver" href="detalleProducto.html?id=${producto.id}">
+                        <a class="btn-ver" href="producto.html?id=${producto.id}">
                             Ver más
                         </a>
                     </div>
