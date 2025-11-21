@@ -1,6 +1,6 @@
 let queryString = location.search;             
 let queryObj = new URLSearchParams(queryString);
-let termino = queryObj.get("q");
+let termino = queryObj.get("busqueda");
 
 let titulo = document.querySelector("#tituloResultados");
 let listaResultados = document.querySelector("#listaResultados");
