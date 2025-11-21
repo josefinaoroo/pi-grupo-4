@@ -79,6 +79,7 @@ header .music {
     padding: 1vh;
     border: 1px solid #ccc;
     border-radius: 0.5vw 0 0 0.5vw;
+    width: 20vw;
 }
 .search button {
     padding: 1vh 2vw;
